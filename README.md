@@ -1,59 +1,118 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
-
 <p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
+    <img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo">
 </p>
 
-## About Laravel
+<p align="center">
+    <a href="https://github.com/laravel/framework/actions">
+        <img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status">
+    </a>
+    <a href="https://packagist.org/packages/laravel/framework">
+        <img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads">
+    </a>
+    <a href="https://packagist.org/packages/laravel/framework">
+        <img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version">
+    </a>
+    <a href="https://packagist.org/packages/laravel/framework">
+        <img src="https://img.shields.io/packagist/l/laravel/framework" alt="License">
+    </a>
+</p>
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+---
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+# 📚 SIAKAD - Sistem Informasi Akademik Sederhana
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+## Tentang Aplikasi
 
-## Learning Laravel
+**SIAKAD (Sistem Informasi Akademik)** adalah aplikasi web berbasis Laravel yang digunakan untuk mengelola data akademik di lingkungan perguruan tinggi. Aplikasi ini dirancang untuk memudahkan administrasi akademik dengan dua peran pengguna: **Admin** dan **Mahasiswa**.
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework. You can also check out [Laravel Learn](https://laravel.com/learn), where you will be guided through building a modern Laravel application.
+### Tujuan Aplikasi:
+- Mengelola data dosen, mahasiswa, mata kuliah, dan jadwal perkuliahan
+- Memudahkan mahasiswa dalam mengisi Kartu Rencana Studi (KRS)
+- Menyediakan informasi jadwal perkuliahan secara real-time
+- Mempermudah admin dalam mengelola data akademik
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+### Fitur Unggulan:
+- [**Autentikasi & Authorization**](https://laravel.com/docs/authentication) - Login & Register dengan 2 role (Admin & Mahasiswa)
+- [**CRUD Data**](https://laravel.com/docs/eloquent) - Kelola Dosen, Mahasiswa, Mata Kuliah, Jadwal, dan KRS
+- [**Eloquent ORM**](https://laravel.com/docs/eloquent) - Database relationship yang powerful
+- [**Middleware Role**](https://laravel.com/docs/middleware) - Pembatasan akses berdasarkan role
+- [**Export PDF**](https://github.com/barryvdh/laravel-dompdf) - Export KRS ke PDF
+- [**Pencarian & Filter**](https://laravel.com/docs/requests) - Fitur pencarian dan filter data
+- [**Dashboard Statistik**](https://laravel.com/docs/blade) - Visualisasi data secara real-time
 
-## Laravel Sponsors
+---
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+## 🔑 Informasi Login
 
-### Premium Partners
+### 👑 Admin
+| Role | Email | Password | Hak Akses |
+|------|-------|----------|-----------|
+| **Admin** | admin@siakad.com | **admin123** | ✅ Kelola semua data |
 
-- **[Vehikl](https://vehikl.com)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Redberry](https://redberry.international/laravel-development)**
-- **[Active Logic](https://activelogic.com)**
+### 👨‍🎓 Mahasiswa
+| Nama | NPM | Email | Password | Hak Akses |
+|------|-----|-------|----------|-----------|
+| Andi Saputra | 231000001 | andi@student.com | **password** | ✅ Ambil KRS & Lihat Jadwal |
 
-## Contributing
+> **Catatan:** Untuk testing lebih lanjut, gunakan akun mahasiswa lain yang terdaftar di sistem dengan password **`password`**.
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+---
 
-## Code of Conduct
+## 📱 Fitur Aplikasi
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+### 1. Autentikasi
+- **Login**: Pengguna login menggunakan email dan password
+- **Logout**: Pengguna dapat keluar dari sistem
 
-## Security Vulnerabilities
+### 2. Admin
+- **Dashboard**: Statistik data (Dosen, Mahasiswa, Mata Kuliah, Jadwal, KRS)
+- **CRUD Dosen**: Tambah, edit, hapus, lihat data dosen
+- **CRUD Mahasiswa**: Tambah, edit, hapus, lihat data mahasiswa
+- **CRUD Mata Kuliah**: Tambah, edit, hapus, lihat data mata kuliah
+- **CRUD Jadwal**: Tambah, edit, hapus, lihat data jadwal
+- **CRUD KRS**: Tambah, edit, hapus, lihat data KRS
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+### 3. Mahasiswa
+- **Dashboard**: Jumlah KRS, Total SKS, Jadwal Hari Ini, Data diri
+- **KRS**: Lihat, ambil (maks 24 SKS), dan drop mata kuliah
+- **Jadwal**: Lihat semua jadwal dan jadwal yang diambil
+- **Export PDF**: Mengunduh KRS dalam format PDF
 
-## License
+### 4. Fitur Tambahan (Bonus)
+- Export KRS ke PDF
+- Pencarian 
+- Dashboard statistic
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+---
+
+## 🛠 Teknologi yang Digunakan
+
+| Teknologi | Keterangan |
+|-----------|------------|
+| **Laravel 12** | Framework PHP |
+| **Bootstrap 5** | Frontend Framework |
+| **Bootstrap Icons** | Icon Library |
+| **MySQL / SQLite** | Database |
+| **Laravel DomPDF** | Export PDF |
+| **Laravel Breeze** | Authentication |
+
+---
+
+## 🌐 Link Hosting
+
+Aplikasi dapat diakses secara online di:
+
+👉 **[https://sania-delayaxa.gt.tc/login](https://sania-delayaxa.gt.tc/login)**
+
+---
+
+## 👨‍💻 Pengembang
+
+| Nama | [Sania Delayaxa] |
+|------|-------------|
+| **NPM** | [5520124123] |
+| **Kelas** | [IF D 24] |
+
+**Mata Kuliah:** Web II 
+
+---
